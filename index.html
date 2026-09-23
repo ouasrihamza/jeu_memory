@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de Memory</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- defer permet d'exécuter le script une fois le DOM chargé -->
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Jeu de Memory</h1>
+
+    <!-- Zone des statistiques et contrôle -->
+    <div class="stats-panel">
+      <span id="moves">Coups: 0</span>
+      <span id="timer">Temps: 00:00</span>
+      <button id="restart-btn">Rejouer</button>
+    </div>
+
+    <!-- Message de fin de partie -->
+    <p id="result"></p>
+
+    <!-- Plateau où les cartes seront injectées par JS -->
+    <div id="game-board"></div>
+  </div>
+</body>
+</html>
